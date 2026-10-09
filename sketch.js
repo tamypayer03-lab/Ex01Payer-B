@@ -1,3 +1,8 @@
+function setup() {
+  createCanvas(800, 800)
+}
+
+function draw() {
   background(239, 239, 239);
 
   // RETTANGOLI COLORATI
@@ -37,4 +42,9 @@
     350 + vibrazione, 0,
     350 + vibrazione, 800
   );
+}
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
